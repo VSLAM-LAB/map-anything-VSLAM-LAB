@@ -174,3 +174,6 @@ cython_debug/
 
 # VSCode
 .vscode
+
+# VSLAM-LAB install log (BaselineVSLAMLAB.install)
+install_*.txt

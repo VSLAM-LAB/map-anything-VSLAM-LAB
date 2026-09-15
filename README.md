@@ -49,6 +49,8 @@
 
 </div>
 
+> **VSLAM-LAB fork.** This repository backs the `mapanything` baseline of [VSLAM-LAB](https://github.com/VSLAM-LAB/VSLAM-LAB): upstream [facebookresearch/map-anything](https://github.com/facebookresearch/map-anything) plus the entry point `vslamlab_mapanything.py` (one pass over a VSLAM-LAB sequence window; mode `mono` = images only or images + calibration intrinsics, mode `rgbd` = images + intrinsics + metric depth) and its settings yaml. Camera-to-world poses go to `<exp_folder>/<exp_it>_KeyFrameTrajectory.csv`.
+
 ## Overview
 
 MapAnything is an **open-source research framework** for universal metric 3D reconstruction. At its core is a simple, end-to-end trained transformer model that directly regresses the factored metric 3D geometry of a scene given various types of inputs (images, calibration, poses, or depth). A single feed-forward model supports over 12 different 3D reconstruction tasks including multi-image sfm, multi-view stereo, monocular metric depth estimation, registration, depth completion and more.
